@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<body>
+<div id="da" style="width: 500px; margin: auto; font-size: 20px; color: red;"></div>
+<script type="text/javascript">
+getDate()
+setInterval(getDate,100)
+function getDate(){
+var starting= new Date();
+var deadline= new Date(2017,8,30,6);
+	var num =deadline-starting;
+	// if(num<=0){
+	// 	clearInterval(time)
+	// 	return
+	// }
+	da.innerHTML='距离十一还有：'+Math.floor(num/(1000*60*60*24))+'天'+(Math.floor(num/(1000*60*60))-Math.floor(num/(1000*60*60*24))*24)+'小时'+(Math.floor(num/(1000*60))-Math.floor(num/(1000*60*60))*60)+'分钟'+(Math.floor(num/(1000))-Math.floor(num/(1000*60))*60)+'.'+(Math.floor(num/(100))-Math.floor(num/(1000))*10)+'秒'
+}
+
+</script>
+
+</body>
+</html>
